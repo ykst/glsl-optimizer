@@ -952,6 +952,7 @@ is_varying_var(GLenum shaderType, const ir_variable *var)
       case VARYING_SLOT_POS:
       case VARYING_SLOT_FACE:
       case VARYING_SLOT_PNTC:
+      case VARYING_SLOT_LFGD:
          return false;
       default:
          return true;

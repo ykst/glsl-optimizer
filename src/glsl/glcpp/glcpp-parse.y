@@ -1191,6 +1191,9 @@ glcpp_parser_create (const struct gl_extensions *extensions, int api)
            if (extensions != NULL) {
               if (extensions->OES_EGL_image_external)
                  add_builtin_define(parser, "GL_OES_EGL_image_external", 1);
+
+              if (extensions->EXT_shader_framebuffer_fetch)
+                 add_builtin_define(parser, "GL_EXT_shader_framebuffer_fetch", 1);
            }
 	} else {
 	   add_builtin_define(parser, "GL_ARB_draw_buffers", 1);

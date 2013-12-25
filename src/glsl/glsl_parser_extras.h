@@ -363,6 +363,8 @@ struct _mesa_glsl_parse_state {
    bool EXT_shader_integer_mix_warn;
    bool ARB_shader_atomic_counters_enable;
    bool ARB_shader_atomic_counters_warn;
+   bool EXT_shader_framebuffer_fetch_enable;
+   bool EXT_shader_framebuffer_fetch_warn;
    /*@}*/
 
    /** Extensions supported by the OpenGL implementation. */
